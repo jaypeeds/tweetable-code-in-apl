@@ -173,7 +173,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 
 ## Closing note
 
-* Scroll through to the right end to select and copy it.
+* Scroll through to the right end of the above line of code to select and copy it.
 * Go to http://tryapl.org and paste it, followed by a "carraige return" to see the result
 * Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left, it is easy to build code by extending it progressively from the left end:
  * In APL, 2 x 1 + 1 is 4
