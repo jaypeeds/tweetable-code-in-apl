@@ -176,7 +176,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 * Go to http://tryapl.org
 * Copy and paste the above code to see the result
 * Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left:
-** 2 x 1 + 1 is 4
+ * In APL, 2 x 1 + 1 is 4
 
 it is easy to build code by extending progressively from the left end. 
 
