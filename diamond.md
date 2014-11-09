@@ -181,9 +181,9 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 * APL on the desktop
  * GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
  * DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
-  * TryAPL.org is their portal.
-  * It supports the alpha-omega notation, which allows to define lambdas: 
-  ```apl
+   * TryAPL.org is their portal.
+   * It supports the alpha-omega notation, which allows to define lambdas: 
+```apl
  		{⍵×⍵}5
 25
   ```
