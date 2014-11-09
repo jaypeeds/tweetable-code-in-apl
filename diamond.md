@@ -181,8 +181,8 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 it is easy to build code by extending progressively from the left end. 
 
 * APL on the desktop:
- * GNU APL has been used to test this code.
- * DyalogAPL has a free community version for Windows.
+ * GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
+ * DyalogAPL has a free community version for Windows. TryAPL is their portal.
  * On  OS X, Ukelele is a keyboard configurator tool.
 
 
