@@ -9,7 +9,7 @@ C   C
  B B
   A
 ```
-This problem was a pretext in a training about TDD, where some simple code had to be elaborated in Java, and various methods were discussed. This one is genuine. Somehow, it takes its inspiration from functional programing. APL is naturally handling vectors, so its style of programmaing is more on the declarative and functional side, than on the imperative side. Well, you will make your own opinion soon. Also consult Dijkstra's judgement on APL.
+This problem was a pretext in a training about TDD, where some simple code had to be elaborated in Java, and various methods were discussed. This one is genuine. Somehow, it takes its inspiration from functional programing. APL is naturally handling vectors, so its style of programming is more on the declarative and functional side, than on the imperative side. Well, you will make your own opinion soon. Also consult Dijkstra's judgement on APL.
 
 "APL is a mistake, carried through to perfection. It is the language of the future for the programming techniques of the past: it creates a new generation of coding bums."
 
