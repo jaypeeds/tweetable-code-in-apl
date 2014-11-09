@@ -40,7 +40,7 @@ Therefore, the target is to generate this matrix:
 0 0 3
 ```
 
-The valie 3 is easily obtained as the 1-based index of 'C' in the alphabet:
+The value 3 is easily obtained as the 1-based index of 'C' in the alphabet:
 
 ```apl
     	N←(A←'ABCDEFGHIJKLMNOPQRSTUVXYZ')⍳'C' 
@@ -103,7 +103,7 @@ With the earlier defined variable N this is noted:
 		(N,N)⍴⍳N
 ```
 
-Let's call M our model, so have established:
+Let's call M our model, so we have established:
 
 ```apl
 		M←((N,N)⍴1,N⍴0)×(N,N)⍴⍳N
@@ -152,16 +152,14 @@ Let's call D like diamond the result:
 0 0 1 0 0
 ```
 
-Next step, an ad-hoc vector (or  string) of characters is  
-composed with a space followed by the  subset of the alphabet up to the 
-"widest row" character giving ' ABC', whith the indices starting at 1:
+Next step, an ad-hoc vector (or  string) of characters is composed with a space followed by the  subset of the alphabet up to the "widest row" character giving ' ABC', whith the indices starting at 1:
 
 * 1 for ' '
 * 2 for 'A'
 * 3 for 'B'
 * 4 for 'C'
 
-Look at first lineof code when we defined N, A is also defined as the whole alphabet.
+Look at first line of code when we defined N, A is also defined as the whole alphabet.
 ```apl
 		' ',N⍴A
 ```
@@ -177,6 +175,11 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 
 * Go to http://tryapl.org
 * Copy and paste the above code to see the result
+* Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left:
+** 2 x 1 + 1 is 4
+
+it is easy to build code by extending progressively from the left end. 
+
 * APL on the desktop:
 ** GNU APL has been used to test this code.
 ** DyalogAPL has a free community version for Windows.
