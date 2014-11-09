@@ -143,7 +143,7 @@ Next step, we want T pasted on top of its horizontal mirror, less the top line
 Let's call D like diamond the result:
 
 ```apl
-		D←T⍪(1 0)↓T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N⍴0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVXYZ')⍳'C' 
+		D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C'
     	D
 0 0 1 0 0
 0 2 0 2 0
@@ -167,9 +167,19 @@ Look at first lineof code when we defined N, A is also defined as the whole alph
 ```
 
 In APL, a vector can be rehaped by indexing, the result will take the shape of the indexing matrix.
-As D is zero-based, we'll add 1 to it and index 
+As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 
 ```apl
-	(' ',N⍴A)[1+D←T⍪(1 0)↓←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
+	(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
+
+## Closing note
+
+* Go to http://tryapl.org
+* Copy and paste the above code to see the result
+* APL on the desktop:
+** GNU APL has been used to test this code.
+** DyalogAPL has a free community version for Windows.
+** On  OS X, Ukelele is a keyboard configurator tool.
+
 
