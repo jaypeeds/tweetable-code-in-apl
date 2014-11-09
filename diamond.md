@@ -175,14 +175,18 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 
 * Go to http://tryapl.org
 * Copy and paste the above code to see the result
-* Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left:
+* Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left, it is easy to build code by extending it progressively from the left end:
  * In APL, 2 x 1 + 1 is 4
 
-it is easy to build code by extending progressively from the left end. 
-
-* APL on the desktop:
+* APL on the desktop
  * GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
- * DyalogAPL has a free community version for Windows. TryAPL is their portal.
+ * DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
+  * TryAPL.org is their portal.
+  * It supports the alpha-omega notation, which allows to define lambdas: 
+  ```apl
+ 		{⍵×⍵}5
+25
+  ```
  * On  OS X, Ukelele is a keyboard configurator tool.
 
 
