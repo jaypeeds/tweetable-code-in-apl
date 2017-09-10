@@ -121,7 +121,7 @@ trimming of duplicate columns/lines, achieved with the Drop operator '↓', and 
 ```
 Let's call T like top, the result
 
-T is the vertical mirror of M, pasted with a copy of M with the first column dropped.
+T is the vertical mirror of M, pasted with a copy of M with 0 line and the first column dropped.
 
 ```apl
 		T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N
@@ -178,15 +178,15 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 * Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left, it is easy to build code by extending it progressively from the left end:
  * In APL, 2 x 1 + 1 is 4
 
-* APL on the desktop
- * GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
- * DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
-   * TryAPL.org is their portal.
-    * It supports the alpha-omega notation, which allows the definition of lambdas: 
+- APL on the desktop
+* GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
+* DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
+   - TryAPL.org is their portal.
+   - It supports the alpha-omega notation, which allows the definition of lambdas: 
 ```apl
  		{⍵×⍵}5
 25
   ```
- * On  OS X, Ukelele is a keyboard configurator tool.
+ - On  macOS, Ukelele is a keyboard configurator tool.
 
 
