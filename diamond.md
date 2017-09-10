@@ -178,11 +178,11 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 * Despite the cryptic notation, APL code can very easily be read as an English phrase. Because of its unusual precedence order, from right to left, it is easy to build code by extending it progressively from the left end:
  * In APL, 2 x 1 + 1 is 4
 
-- APL on the desktop
-* GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
-* DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
-   - TryAPL.org is their portal.
-   - It supports the alpha-omega notation, which allows the definition of lambdas: 
+* APL on the desktop
+	- GNU APL (Dr. Jürgen Sauermann) has been used to test this code.
+	- DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
+   		* TryAPL.org is their portal.
+   		* It supports the alpha-omega notation, which allows the definition of lambdas: 
 ```apl
  		{⍵×⍵}5
 25
