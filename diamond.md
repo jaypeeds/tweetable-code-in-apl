@@ -189,7 +189,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
   ```
  - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR.
 ```
- 	(' ',N⍴A)[D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴1+⍳N←1+(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
+	(' ',N⍴A)[D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴1+⍳N←1+(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
  - On  macOS, Ukelele is a keyboard configurator tool.
 
