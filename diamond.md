@@ -187,7 +187,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
  		{⍵×⍵}5
 25
   ```
- - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR.
+ - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR. Go to https://repl.it/languages/APL to try the adjusted code:
 ```
 	((1+N)⍴A)[D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴1+⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
