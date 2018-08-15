@@ -143,7 +143,7 @@ Next step, we want T pasted on top of its horizontal mirror, less the top line
 Let's call D like diamond the result:
 
 ```apl
-		D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C'
+	D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C'
     	D
 0 0 1 0 0
 0 2 0 2 0
@@ -161,10 +161,10 @@ Next step, an ad-hoc vector (or  string) of characters is composed with a space 
 
 Look at first line of code when we defined N, A is also defined as the whole alphabet.
 ```apl
-		' ',N⍴A
+	' ',N⍴A
 ```
 
-In APL, a vector can be rehaped by indexing, the result will take the shape of the indexing matrix.
+In APL, a vector can be reshaped by indexing, the result will take the shape of the indexing matrix.
 As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 
 ```apl
@@ -189,7 +189,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
   ```
  - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR. Go to https://repl.it/languages/APL to try the adjusted code:
 ```
-	((1+N)⍴A)[D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴1+⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
+	A[T⍪(1,0)↓⊖T←(⌽M),(0,1)↓M←((N,N)⍴(1,N⍴0))×1+(N,N)⍴⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
  - On  macOS, Ukelele is a keyboard configurator tool.
 
