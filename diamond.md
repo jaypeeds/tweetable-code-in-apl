@@ -170,6 +170,20 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 ```apl
 	(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
+# How to transform this expression into a function
+The above expression takes only one parameter the 'C' value.
+To change this expression to a function, it must be enclosed into curly braces '{}', and each occurrence of the single parameter to the greek omega name:
+```apl
+	{(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳⍵]}
+```
+This defines the body or the value of the function itself, it can be bound to a name using the regular assignment operator:
+```apl
+	diamond ← {(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳⍵]}
+```
+And it can be invoked using the usual way:
+```apl
+	diamond 'C'
+```
 
 ## Closing note
 
@@ -183,10 +197,10 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 	- DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
    		* TryAPL.org is their portal.
    		* It supports the alpha-omega notation, which allows the definition of lambdas: 
-```apl
- 		{⍵×⍵}5
-25
-  ```
+                  ```apl
+ 		          {⍵×⍵}5
+                          25
+                  ```
  - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR. Go to https://repl.it/languages/APL to try the adjusted code:
 ```
 	A[T⍪(1,0)↓⊖T←(⌽M),(0,1)↓M←((N,N)⍴(1,N⍴0))×1+(N,N)⍴⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
