@@ -170,7 +170,7 @@ As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
 ```apl
 	(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
 ```
-# How to transform this expression into a function
+## How to transform this expression into a function
 The above expression takes only one parameter the 'C' value.
 To change this expression to a function, it must be enclosed into curly braces '{}', and each occurrence of the single parameter to the greek omega name:
 ```apl
@@ -197,7 +197,7 @@ And it can be invoked using the usual way:
 	- DyalogAPL is an advanced implementation of APL with a free community version for Windows. 
    		* TryAPL.org is their portal.
    		* It supports the alpha-omega notation, which allows the definition of lambdas: 
-                  ```apl
+   		```apl
  		          {⍵×⍵}5
                           25
                   ```
