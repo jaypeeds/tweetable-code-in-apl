@@ -200,7 +200,7 @@ And it can be invoked using the usual way:
    		```apl
  		          {⍵×⍵}5
                           25
-                  ```
+		```
  - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR. Go to https://repl.it/languages/APL to try the adjusted code:
 ```
 	A[T⍪(1,0)↓⊖T←(⌽M),(0,1)↓M←((N,N)⍴(1,N⍴0))×1+(N,N)⍴⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
