@@ -199,8 +199,15 @@ And it can be invoked using the usual way:
    		* It supports the alpha-omega notation, which allows the definition of lambdas: 
    		```apl
  		          {⍵×⍵}5
-                          25
+                25
 		```
+		To paraphrase an existing binary operator, alpha represents the left argument, omega the right argument:
+   		```apl
+ 		          plus ← {⍺ + ⍵}
+                	  1 plus 3
+	  	4
+		```
+		
  - There is a Javascript based interpreter ngn-apl, which assumes 0 as the base of indexes: ⎕IO is zero and can't be reassigned without a DOMAIN ERROR. Go to https://repl.it/languages/APL to try the adjusted code:
 ```
 	A[T⍪(1,0)↓⊖T←(⌽M),(0,1)↓M←((N,N)⍴(1,N⍴0))×1+(N,N)⍴⍳N←(A←' ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
