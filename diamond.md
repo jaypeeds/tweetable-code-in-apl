@@ -165,7 +165,7 @@ Look at first line of code when we defined N, A is also defined as the whole alp
 ```
 
 In APL, a vector can be reshaped by indexing, the result will take the shape of the indexing matrix.
-As D is zero-based, we'll add 1 to it and index that ad-hoc vector:
+As D is zero-base indexed, we'll add 1 to it and index that ad-hoc vector:
 
 ```apl
 	(' ',N⍴A)[1+D←T⍪(1 0)↓⊖T←(⌽M),(0 1)↓M←((N,N) ⍴ 1,N ⍴ 0)×(N,N)⍴⍳N←(A←'ABCDEFGHIJKLMNOPQRSTUVWXYZ')⍳'C']
